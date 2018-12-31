@@ -19,6 +19,7 @@ Keep ABP on while reading on [ruanyifeng.com](https://www.ruanyifeng.com)
 # Rules of Engagement
 1. Websites force you to turn off ad blocker.
 2. If you don't turn it off, the main content would be hidden.
+3. Video sharing websites(YouTube, bilibili, etc) are excluded.
 
 ## Engage example
 ![Attack](assets/attack.jpg)
