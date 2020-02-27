@@ -2,7 +2,7 @@
 // @name         KAO#1:ruanyifeng
 // @namespace    https://www.bennythink.com/
 // @version      0.3
-// @description  浏览阮一峰博客时，不必关闭广告屏蔽器。
+// @description  浏览阮一峰博客时，不必关闭广告屏蔽器。（阮一峰似乎取消了这个限制）
 // @author       BennyThink
 // @supportURL   https://github.com/BennyThink/KeepABPOn
 // @license      MIT
