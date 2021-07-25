@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         KAO#1:ruanyifeng
 // @namespace    https://www.bennythink.com/
-// @version      0.3
-// @description  浏览阮一峰博客时，不必关闭广告屏蔽器。（阮一峰似乎取消了这个限制）
+// @version      0.4
+// @description  浏览阮一峰博客时，不必关闭广告屏蔽器。
 // @author       BennyThink
 // @supportURL   https://github.com/BennyThink/KeepABPOn
 // @license      MIT
@@ -11,7 +11,7 @@
 // @grant        none
 // ==/UserScript==
 
-var ryf = document.querySelector('#main-content').innerHTML;
+var content = document.querySelector('#main-content').cloneNode(true);
 
 function loadjscssfile(filename) {
     var fileref = document.createElement("link");
@@ -22,10 +22,10 @@ function loadjscssfile(filename) {
         document.getElementsByTagName("head")[0].appendChild(fileref)
 }
 
+// credits goes for https://github.com/BennyThink/KeepABPOn/issues/5
 function ruanyifeng() {
-
     document.getElementsByClassName('asset-meta')[0].nextElementSibling.style = 'display:none';
-    document.querySelector('#main-content').innerHTML = ryf;
+    document.querySelector('article.hentry').insertBefore(content, document.querySelector('.asset-footer'));
 }
 
 setTimeout(ruanyifeng, 1001);
